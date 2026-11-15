@@ -47,6 +47,17 @@ bash ~/Projects/Claude/claude-base/instalar.sh
 
 Crea los enlaces `~/.claude/CLAUDE.md` y `~/.claude/skills/<skill>` hacia este repo. Si ya hay un fichero de verdad en su sitio, lo guarda con `.antes-<fecha>` y no lo pisa.
 
+### En la nube (Claude Code en claude.ai)
+
+Las sesiones y rutinas en la nube clonan solo el repo del proyecto: no tienen `~/.claude/`. Para que trabajen con las mismas reglas que en el Mac, en el **script de configuración del entorno** (claude.ai/code, ajustes del entorno):
+
+```bash
+git clone --depth 1 https://github.com/rbenitezm/claude-base.git ~/claude-base
+bash ~/claude-base/instalar.sh
+```
+
+Cada sesión baja la última versión de `main`. Lo que el proyecto necesite de verdad (sus reglas duras, su conocimiento) sigue en su propio repo.
+
 ### Si no eres Raúl
 
 ```bash
