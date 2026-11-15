@@ -26,10 +26,20 @@ Por cada proyecto de la tabla:
 5. Trabajar en una rama `revision-<fecha>` de este repo, con un commit. **No fusionar ni subir:** enseñar a Raúl el diff y esperar su sí. Con el sí: fusionar en `main`, subir, cambiar las marcas a «(en claude-base)» en el proyecto (commit en una rama `claude/…`, sin subir a su rama principal salvo que sus reglas lo permitan) y actualizar la tabla de abajo.
 6. Si no hay nada que subir, decirlo en una línea y actualizar solo la tabla.
 
+## Repaso de la memoria local
+
+La memoria de Claude en el Mac (`~/.claude/projects/<ruta del proyecto con «/» cambiadas por «-»>/memory/`) no la ven las sesiones en la nube ni otros Macs. Debe guardar solo punteros: lo que valga para otras sesiones tiene que estar en el repo del proyecto. En la revisión, por cada proyecto:
+
+1. Leer cada fichero de su memoria (menos `MEMORY.md`) y buscar lo que **no** esté en el repo (`origin/<rama>`): reglas, decisiones, permisos, fechas o datos que solo aparecen en la memoria. Un puntero con un resumen de lo que ya está en el repo no cuenta.
+2. Buscar memorias caducadas (con una fecha límite ya pasada) o que contradigan al repo.
+3. **No tocar nada:** ni la memoria ni el repo del proyecto. En el resumen para Raúl, una línea por hallazgo: qué falta en el repo y dónde iría (`docs/conocimiento/…`, `decisiones.md`, `CLAUDE.md`), o qué memoria se puede borrar. Se arregla en una conversación con su sí.
+
+Origen: el 15-nov-2026 se vio que la congelación de subidas de ODA (desde el 30-oct-2026) vivía solo en la memoria local; el repo seguía diciendo que marketing podía subirse.
+
 ## Proyectos
 
-| Proyecto | Ruta en el Mac de Raúl | Rama | Último commit revisado | Fecha |
-|---|---|---|---|---|
-| ODA (Relatos) | `~/Projects/Claude/Relatos` | `main` | `4b8a1e77` | 15-nov-2026 |
+| Proyecto | Ruta en el Mac de Raúl | Memoria local | Rama | Último commit revisado | Fecha |
+|---|---|---|---|---|---|
+| ODA (Relatos) | `~/Projects/Claude/Relatos` | la de su ruta (ver arriba) | `main` | `4b8a1e77` | 15-nov-2026 |
 
 Un proyecto nuevo arrancado con `arrancar-proyecto` se añade aquí cuando tenga su primera nota propia en `docs/conocimiento/`.
