@@ -49,14 +49,11 @@ Crea los enlaces `~/.claude/CLAUDE.md` y `~/.claude/skills/<skill>` hacia este r
 
 ### En la nube (Claude Code en claude.ai)
 
-Las sesiones y rutinas en la nube clonan solo el repo del proyecto: no tienen `~/.claude/`. Para que trabajen con las mismas reglas que en el Mac, en el **script de configuración del entorno** (claude.ai/code, ajustes del entorno):
+Las sesiones y rutinas en la nube clonan solo el repo del proyecto: no tienen `~/.claude/`. Para que trabajen con las mismas reglas que en el Mac, **todo entorno en la nube, de cualquier proyecto,** lleva en su script de configuración (claude.ai/code › elegir entorno › ⚙ › Script de configuración) el contenido de [`nube/setup.sh`](nube/setup.sh), copiado tal cual. Si no puede bajar claude-base, solo avisa: la sesión arranca igual.
 
-```bash
-git clone --depth 1 https://github.com/rbenitezm/claude-base.git ~/claude-base
-bash ~/claude-base/instalar.sh
-```
-
-Cada sesión baja la última versión de `main`. Lo que el proyecto necesite de verdad (sus reglas duras, su conocimiento) sigue en su propio repo.
+- **Red:** funciona también con la red en «Limitado» y sin dominios añadidos (probado el 15-nov-2026: `git clone` pasa por el proxy del entorno aunque un `curl` a github.com dé 400). Si algún día no llega, añadir `github.com` a los dominios permitidos.
+- **Caché:** la nube guarda en caché el resultado del script para arrancar más rápido, así que una sesión puede llevar una versión algo anterior de claude-base. Lo que el proyecto necesite de verdad (sus reglas duras, su conocimiento) sigue en su propio repo.
+- **Comprobarlo:** una sesión en ese entorno con la orden «solo lectura: `ls ~/.claude ~/.claude/skills; head -3 ~/.claude/CLAUDE.md`».
 
 ### Si no eres Raúl
 

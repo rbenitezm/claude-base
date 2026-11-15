@@ -26,7 +26,7 @@ Cuando aparezca un tema nuevo con vida propia (precios, legal, marketing, arquit
 1. **{{La base de datos de producción}} no se borra ni se restaura sin preguntar a {{Raúl}} y esperar su respuesta.** Leer es libre; escribir sobre lo existente, no. Ver `docs/conocimiento/bd-no-se-borra.md`.
 2. **Publicar es humano.** Nada sale en {{redes, correo o anuncios}} sin el visto bueno de {{Raúl}} para ese envío concreto.
 3. **Las claves nunca van en el código** ni en ficheros del repositorio. En la nube, como secretos del entorno.
-4. **Subir a `{{main}}` despliega.** {{Hay permiso permanente para … / Se espera a que Raúl lo pida.}} Los agentes en la nube trabajan en ramas `claude/…` y abren un pull request.
+4. **Subir a `{{main}}` despliega.** {{Hay permiso permanente para … / Se espera a que Raúl lo pida.}} Los agentes en la nube trabajan en ramas `claude/…` y abren un pull request. Su entorno de claude.ai/code lleva en el script de configuración el `nube/setup.sh` de claude-base.
 5. **{{Las pruebas E2E van contra la base de datos real: solo usuarios desechables y se limpia solo lo creado.}}** Ver `docs/conocimiento/e2e-solo-desechables.md`.
 
 ## Cómo se trabaja

@@ -50,6 +50,11 @@ Lo reversible y menor se decide sin preguntar y se dice en una línea. Un permis
 - Una recomendación con su contrapartida honesta, no una lista de opciones. En cambios de texto o de prompts, citar antes → después.
 - Lo que Raúl tenga que hacer a mano (SQL, una clave, un interruptor en una consola): texto exacto para copiar, en el momento y repetido al final.
 
+## En la nube
+
+- Todo entorno en la nube (claude.ai/code) que se cree o se revise, en cualquier proyecto, lleva en su script de configuración el contenido de `nube/setup.sh` de claude-base, copiado tal cual. Al crear una rutina o un agente en la nube, comprobar que su entorno lo tiene; si no, decirlo (cambiarlo en la web es cosa de Raúl o con su sí).
+- Las sesiones en la nube no ven la memoria local ni el Mac: lo que necesiten, en el repo del proyecto.
+
 ## Git
 
 - Commits con el autor que tenga el repo en su config local (Raúl Benítez Mejías, el correo de su GitHub, no el noreply). Si el repo no lo tiene, preguntar el correo y configurarlo en local; nunca `--author`.

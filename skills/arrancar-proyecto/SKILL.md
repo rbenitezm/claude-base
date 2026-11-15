@@ -48,7 +48,11 @@ Luego:
 - Si se copiaron notas de un stack, añadir sus líneas al índice de `docs/conocimiento/README.md`: están listas para copiar en `stacks/<stack>/LEEME.txt`.
 - Primera fila de `docs/decisiones.md`, con la fecha de hoy: «Estructura de trabajo creada desde claude-base (arrancar-proyecto)».
 
-## 4. Comprobar
+## 4. Si el proyecto va a tener agentes en la nube
+
+Cada entorno de claude.ai/code que use el proyecto lleva en su script de configuración el contenido de `~/claude-base/nube/setup.sh` (o del repo en GitHub), copiado tal cual; así las sesiones en la nube tienen el mismo `CLAUDE.md` personal y las mismas skills que el Mac. Decírselo a Raúl con el texto para pegar, o pegarlo con su sí. Ver el apartado «En la nube» del README de claude-base.
+
+## 5. Comprobar
 
 ```bash
 grep -rn '{{' CLAUDE.md docs/ | grep -v 'por decidir'   # no debe salir nada
