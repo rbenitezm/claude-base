@@ -32,6 +32,6 @@ Cuando aparezca un tema nuevo con vida propia (precios, legal, marketing, arquit
 ## Cómo se trabaja
 
 - **Decidido, apuntado:** toda decisión o duda se escribe el mismo día en `docs/decisiones.md`, y lo que haya que hacer, en `docs/pendientes.md`. El detalle, en el documento del tema, que enlaza a la decisión en vez de repetirla.
-- **Lo aprendido, al repositorio:** una regla o una trampa que valga para otras sesiones se escribe en `docs/conocimiento/` (y se añade a su índice), no solo en la memoria local de Claude.
+- **Lo aprendido, al repositorio:** una regla o una trampa que valga para otras sesiones se escribe en `docs/conocimiento/` (y se añade a su índice), no solo en la memoria local de Claude. Si la lección vale también fuera de este proyecto, se marca «(genérica)» en el índice para subirla a `claude-base`.
 - **Antes de dar algo por hecho:** `{{pnpm typecheck}}`, `{{pnpm lint}}` y `{{pnpm test}}`. Código nuevo: repasar `docs/conocimiento/bug-classes-checklist.md`.
 - **Fechas absolutas** («9-oct-2026»), nunca «ayer» o «la semana que viene».

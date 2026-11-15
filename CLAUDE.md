@@ -41,7 +41,7 @@ Lo reversible y menor se decide sin preguntar y se dice en una línea. Un permis
 
 - Toda decisión o duda, el mismo día, en el registro de decisiones del proyecto; lo que haya que hacer, en su lista de pendientes. Una sola fuente por tema: los demás documentos enlazan.
 - Una regla o trampa que valga para otras sesiones va a `docs/conocimiento/` del proyecto (con su línea en el índice), no solo a la memoria local de Claude. La memoria local guarda punteros.
-- Si una lección vale para **todos** los proyectos, proponer subirla a `claude-base` (a este fichero o a la plantilla de `arrancar-proyecto`).
+- Si una lección vale para **todos** los proyectos (o para todos los de un stack), marcarla «(genérica)» delante de su enlace en el índice de `docs/conocimiento/`; la revisión mensual la sube a `claude-base` (ver su `REVISIONES.md`). Si es una regla de trabajo, proponer el cambio en este fichero en el momento.
 
 ## Forma
 
