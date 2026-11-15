@@ -36,6 +36,22 @@ La memoria de Claude en el Mac (`~/.claude/projects/<ruta del proyecto con «/»
 
 Origen: el 15-nov-2026 se vio que la congelación de subidas de ODA (desde el 30-oct-2026) vivía solo en la memoria local; el repo seguía diciendo que marketing podía subirse.
 
+## Repaso de los entornos en la nube
+
+Todo entorno de claude.ai/code tiene que llevar en su script de configuración el contenido de [`nube/setup.sh`](nube/setup.sh) (ver «En la nube» en el README). Claude.ai no lo pone solo, así que se revisa:
+
+1. Con Claude en Chrome (el Chrome de Raúl, con su sesión): abrir claude.ai/code en una pestaña nueva, abrir el selector de entornos (abajo, junto al repositorio) y, en «Más», ver la lista completa. Por cada entorno de la nube, pasar el ratón por encima, pulsar ⚙ y abrir «Script de configuración» **solo para leerlo**.
+2. Un entorno está bien si su script contiene `rbenitezm/claude-base` y `instalar.sh`. Si está vacío o no los tiene, es un hallazgo. «Default» cuenta como uno más.
+3. **No cambiar nada:** cerrar cada ajuste con «Cancelar» y la pestaña al terminar. En el resumen para Raúl, una línea por entorno sin script (nombre y qué tiene ahora) y el texto de `nube/setup.sh` para pegar. Se pone en una conversación con su sí.
+4. Actualizar la tabla de abajo (entornos nuevos, quitados, fecha de la revisión).
+5. Si Chrome o la extensión no responden, o claude.ai pide iniciar sesión, decirlo en una línea y seguir con lo demás: no reintentar ni buscar otra vía.
+
+| Entorno | Para qué | Script de claude-base | Revisado |
+|---|---|---|---|
+| Agente ODA | Rutinas de marketing de ODA | Sí (probado con una sesión) | 15-nov-2026 |
+| Competencia ODA | Rutina de competencia de ODA | Sí | 15-nov-2026 |
+| Default | El de por defecto | No revisado | — |
+
 ## Proyectos
 
 | Proyecto | Ruta en el Mac de Raúl | Memoria local | Rama | Último commit revisado | Fecha |
