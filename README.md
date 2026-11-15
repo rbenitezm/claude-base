@@ -41,7 +41,7 @@ El `CLAUDE.md` está escrito para Raúl (su nombre, su idioma, su autor de git):
 - Se edita aquí; los enlaces hacen que el cambio llegue a todos los proyectos al momento.
 - Una lección de un proyecto que valga para todos sube aquí: al `CLAUDE.md` si es una regla de trabajo, a `plantilla/docs/conocimiento/` si es una trampa genérica, a `stacks/<stack>/` si es de un stack.
 - Nada de un proyecto concreto (clientes, precios, nombres) entra aquí.
-- Las agentes en la nube no ven `~/.claude/`: lo que necesiten tiene que estar en el `CLAUDE.md` y los `docs/` del repo del proyecto.
+- Los agentes en la nube no ven `~/.claude/`: lo que necesiten tiene que estar en el `CLAUDE.md` y los `docs/` del repo del proyecto.
 
 ## Licencia
 
