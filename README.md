@@ -64,6 +64,16 @@ bash ~/claude-base/instalar.sh
 
 El `CLAUDE.md` está escrito para Raúl (su nombre, su idioma, su autor de git): cámbialo por el tuyo antes de usarlo. Las skills y la plantilla valen tal cual. Necesitas [Claude Code](https://claude.com/claude-code).
 
+## Un proyecto nuevo, paso a paso
+
+1. **Crear la carpeta y abrirla en Claude Code** (por ejemplo en `~/Projects/Claude/<nombre>`). En un Mac con claude-base instalado no hace falta nada más: el `CLAUDE.md` personal y las skills ya se cargan en cualquier carpeta.
+2. **Escribir `/arrancar-proyecto`** (o «arranca el proyecto»). Claude mira lo que hay sin tocar nada y hace en un solo bloque las preguntas que no pueda deducir: qué es, quién decide, cómo se verifica, qué despliega, qué datos no se tocan, qué se publica fuera y en qué idioma. Luego crea `CLAUDE.md`, `docs/decisiones.md`, `docs/pendientes.md` y `docs/conocimiento/` (con las trampas del stack si coincide) y enseña el resultado. Se revisa, se corrige y se le dice cuándo hacer el primer commit; si el repo no tiene autor, pide el correo.
+3. **Crear el repo en GitHub:** «crea el repo en GitHub, privado».
+4. **Si va a tener agentes en la nube:** crear su entorno en claude.ai/code, pegar en el script de configuración el contenido de [`nube/setup.sh`](nube/setup.sh) (Claude puede hacerlo desde Chrome), poner las claves como secretos de red del entorno (nunca en el repo) y comprobarlo con una sesión de prueba de solo lectura (ver «En la nube»).
+5. **Apuntarlo en la revisión mensual:** cuando tenga su primera nota propia en `docs/conocimiento/`, añadirlo a la tabla de [`REVISIONES.md`](REVISIONES.md). Desde entonces, el primer lunes de cada mes se propone subir lo marcado «(genérica)», se avisa de lo que solo esté en la memoria local y de los entornos sin el script.
+
+En el día a día: lo decidido, en `decisiones.md`; lo que queda, en `pendientes.md`; lo aprendido, en `docs/conocimiento/`, con «(genérica)» si vale fuera del proyecto. La memoria local de un proyecto nuevo empieza vacía, y no importa: lo que cuenta está en el repo.
+
 ## Cómo se mantiene
 
 - Se edita aquí; los enlaces hacen que el cambio llegue a todos los proyectos al momento.
