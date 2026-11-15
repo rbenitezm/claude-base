@@ -1,0 +1,10 @@
+Notas para proyectos con Next.js + Vercel + Supabase. Se copian a docs/conocimiento/
+(cp -n *.md) y se añaden al índice con estas líneas (no copiar este fichero):
+
+- [Next.js: leer su documentación instalada](nextjs-version-instalada.md) — Next.js cambia mucho entre versiones: antes de escribir código, leer la guía de node_modules/next/dist/docs/ y respetar los avisos de obsoleto
+- [Un despliegue mata los botones abiertos](vercel-despliegue-mata-acciones.md) — cada despliegue invalida las server actions de las pestañas abiertas: no desplegar mientras alguien edita
+- [«Redeploy» repite el código de ese despliegue](vercel-redeploy-codigo-viejo.md) — en Vercel, «Redeploy» de una fila vieja vuelve a montar su commit viejo; tras cambiar variables, redesplegar la del último commit o subir uno
+- [Ficheros grandes por URL firmada, nunca por Vercel](vercel-ficheros-por-url-firmada.md) — devolver PDF o vídeo en el cuerpo de una ruta agota la transferencia de Vercel; se guardan en Supabase Storage y se entrega una URL firmada
+- [sharp no carga en Vercel](vercel-sharp-roto.md) — ERR_DLOPEN libvips en las funciones desplegadas; lo crítico en JS puro, y las degradaciones son mudas
+- [Supabase: lo que engorda es el almacenamiento](supabase-cuotas.md) — el plan gratis se agota por ficheros y vídeo, no por la base de datos; recomprimir antes de guardar y medir antes de culpar
+- [react-pdf: trampas que fallan en silencio](react-pdf-trampas.md) — ocho trampas verificadas de @react-pdf/renderer 4.5 (páginas de alto 0, bucles, imágenes que desaparecen, fuentes sin incrustar)
